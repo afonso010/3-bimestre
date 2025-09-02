@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        button{
+            padding: 40px;
+            background-color: blueviolet;
+        }
+   </style>
+</head>
+<body>
+    <h1>butão 1</h1>
+    <button onclick="clicar()">clique aqui</button>
+    <h1>botão02</h1>
+    <button onclick="responda()">responda aqui</button>
+    <script>
+    function clicar(){
+
+        window.alert ('Você clicou!')
+    }
+
+
+        function responda(){
+let nome = window.prompt(`qual seu jogador favorito?`);
+window.alert(`seu jogador favorito e ${nome}`);
+
+        }
+    </script>
+
+</body>
+</html>
