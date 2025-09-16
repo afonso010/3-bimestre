@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Contador de Cliques</title>
+</head>
+<body>
+  <h1>Contador de Cliques</h1>
+
+  
+  <button onclick="contarCliques()">Clique aqui</button>
+
+  
+  <p id="contador">O botão ainda não foi clicado.</p>
+
+  <script>
+    
+    let cliques = 0;
+
+    
+    function contarCliques() {
+      cliques++; 
+      let texto = "O botão já foi clicado " + cliques + " vez" + (cliques > 1 ? "es" : "") + ".";
+      document.getElementById("contador").textContent = texto;
+    }
+  </script>
+</body>
+</html>

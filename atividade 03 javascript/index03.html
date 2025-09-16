@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>sou di menor</title>
+</head>
+<body>
+  <h1>Verificação de menor</h1>
+
+  
+  <p id="mensagemMaioridade"></p>
+
+  <script>
+    
+    let idade = prompt("Digite a sua idade:");
+
+    
+    idade = Number(idade);
+
+    
+    let mensagem = "";
+    if (idade >= 18) {
+      mensagem = "Você é maior de idade.";
+    } else if (idade < 18 && idade >= 0) {
+      mensagem = "Você é di menor.";
+    } else {
+      mensagem = "ai ce me quebra.";
+    }
+
+    
+    document.getElementById("mensagemMaioridade").textContent = mensagem;
+  </script>
+</body>
+</html>
